@@ -1,0 +1,37 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+@import url('https://fonts.cdnfonts.com/css/kharkiv-tone');
+
+@import url('./conus_chimney.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./menu.css');
+@import url('./salted_chimney.css');
+@import url('./cream_inside.css');
+@import url('./map.css');
+@import url('./footer.css');
+
+
+@font-face {
+font-family: 'Kharkiv Tone', sans-serif;
+	src: url('https://fonts.cdnfonts.com/s/23116/KharkivTone-Regular.ttf') format('truetype');
+
+}
+
+:root {
+	font-family: 'Kharkiv Tone', sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	font-weight: 400;
+
+	color: #242424;
+	background-color: #F4F4F4;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+	--basic-dark: #242424;
+	--basic-light: #F4F4F4;
+	--transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
