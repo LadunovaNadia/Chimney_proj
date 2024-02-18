@@ -12,26 +12,64 @@
 
 
 @font-face {
-font-family: 'Kharkiv Tone', sans-serif;
-	src: url('https://fonts.cdnfonts.com/s/23116/KharkivTone-Regular.ttf') format('truetype');
-
+	font-family: 'Kharkiv Tone', sans-serif;
+	src: url('/src/fonts/KharkivTone-regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 
+
 :root {
-	font-family: 'Kharkiv Tone', sans-serif;
+	--font-family: "Kharkiv Tone", sans-serif;
+	--second-family: "Montserrat", sans-serif;
 	font-size: 18px;
 	line-height: 18px;
 	font-weight: 400;
 
-	color: #242424;
-	background-color: #F4F4F4;
+		--main-orange: #fd6103;
+		--background: #eee5df;
+		--black: #2e2724;
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-size-adjust: 100%;
-	--basic-dark: #242424;
-	--basic-light: #F4F4F4;
 	--transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.container {
+	max-width: 100%;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin: 0 auto;
+}
+
+@media (min-width: 375px) {
+	.container {
+		max-width: 359px;
+	}
+}
+
+@media (min-width: 744px) {
+	.container {
+		max-width: 664px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.container {
+		max-width: 1280px;
+	}
+}
+
+body {
+	font-family: 'Kharkiv Tone', sans-serif;
+
+}
+
+html {
+	scroll-behavior: smooth;
 }
