@@ -30,3 +30,7 @@
 	stroke-width: 1px;
 	stroke: var(--black);
 }
+
+.logo_link {
+	font-family: "Montserrat", sans-serif;
+}
