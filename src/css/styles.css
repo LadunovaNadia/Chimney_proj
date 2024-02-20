@@ -30,15 +30,48 @@
 }
 
 :root {
+	/*------fonts------*/
 	--font-family: "Kharkiv Tone", sans-serif;
 	--second-family: "Montserrat", sans-serif;
 	font-size: 18px;
 	line-height: 18px;
 	font-weight: 400;
 
+
+	/*--------colors-------*/
 	--main-orange: #fd6103;
 	--background: #eee5df;
-	--black: #2e2724;
+	--black-24: #2e2724;
+	--black-00: #000000;
+	--light-orange: #FFA673;
+	--light-grey: #AEAEAE;
+	--dark_grey: #202020;
+	--grey: #4A4A4A;
+	--main-roze: #E4A4A4;
+	--light-green: #BAD49F;
+	--deep-roze: #FFA573;
+	--pink: #F0AEE1;
+	--deep-yellow: #F1BD43;
+	--beige: #E4C3A4;
+
+	/* ------font-sizes------*/
+	--body-2: 14px;
+	--title-1: 30px;
+	--title-2: 38px;
+	--title-3: 28px;
+	--title-regular: 39px;
+	--subtitle-1: 20px;
+	--subtitle-2: 18px;
+	--subtitle-3: 24px;
+	--body-regular: 16px;
+	--large-1: 77px;
+	--large-2: 64px;
+	--large-3: 40px;
+
+	/*-----font-weights-----*/
+	--normal: 400;
+	--medium: 500;
+
 
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
@@ -46,8 +79,8 @@
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-size-adjust: 100%;
 	--transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
+}
 
 .container {
 	max-width: 100%;
