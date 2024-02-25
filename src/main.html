@@ -1,22 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Pereval</title>
+	<link rel="stylesheet" href="./css/styles.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
+</head>
+
+<body>
+	<include src="partials/header/header.html"></include>
+
+<main>
 <section class="main_section">
 	<div class="main_container container">
-		<div class="main_title_wrapper">
+		<div class="main_text_wrapper">
 			<h1 class="main_title">
 				Чімі з кокосовою присипкою
 			</h1>
-			<p class="main_text">Власне виробництво, чімі виготовляютсякожен день свіжі
+			<p class="main_subtitle">Власне виробництво, чімі виготовляютсякожен день свіжі
 				Димарний пиріг відомий по всьму світі тепер украінізований Чімі
 			</p>
 		</div>
-		<!-- <ul class="main_section_list">
-			<li class="main_item" onclick="changeImage('./images/chimi_coconut_1x.png')">Кокос</li>
-			<li class="main_item" onclick="changeImage('./images/chimi_cinnamon_1x.png')">Кориця</li>
-			<li class="main_item" onclick="changeImage('./images/chimi_nut_1x.png')">Горіх</li>
-			<li class="main_item" onclick="changeImage('./images/chimi_sugar_1x.png')">Цукор</li>
-			<li class="main_item" onclick="changeImage('./images/chimi_waffles_1x.png')">Вафля</li>
-			<li class="main_item" onclick="changeImage('./images/chimi_oreo_1x.png')">Орео</li>
-			<li class="main_item" onclick="changeImage('./images/chimi_non_parel_1x.png')">Нон-парель</li>
-			<li class="main_item" onclick="changeImage('./images/chimi_cookies_1x.png')">Печиво</li>
-		</ul> -->
+		<div class="main_circle_img_wrapper" id="main_circle_img_wrapper">
+		<div class="main_circle_text" id="circle-text"></div>
+		<div class="main_img_container">
+		<img id="mainImage" class="mainImage" src="./images/chimi_menu_main/chimi_coconut_1x-min.png" alt="Кокосовий Чімі">
+		</div>
+		</div>
+		
+	
 	</div>
 </section>
+	</main>
+
+		<script type="module" src="./main.js"></script>
+
+</body>
+
+</html>
+
+
+
