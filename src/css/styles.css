@@ -55,8 +55,8 @@
 	--deep-yellow: #F1BD43;
 	--beige: #E4C3A4;
 	--black-100: #211B18;
-		--current-bg: linear-gradient(180deg, #cba892 0%, #583520 100%);
-			--current-circle: #583520;
+	--current-bg: linear-gradient(180deg, #cba892 0%, #583520 100%);
+	--current-circle: #583520;
 
 	--coconut-bg: linear-gradient(180deg, #cba892 0%, #583520 100%);
 	--coconut-circle: #583520;
@@ -82,7 +82,8 @@
 	--cookie-bg: linear-gradient(180deg, #c4aea9 0%, #5a2c2c 100%);
 	--cookie-circle: #56322F;
 
-
+	--header-bg-color: #cba892;
+	--gradient-end: #583520;
 
 
 
