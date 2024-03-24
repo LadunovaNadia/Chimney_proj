@@ -109,7 +109,7 @@ function updateAdditionalImagesDisplay(word) {
 
 const imagesContainerIdMapping = {
     "Кокос": "coconutImages",
-    "Кориця": "cinnamonImages",
+    "Кориця": "cinnamoneImages",
     "Горіх": "nutImages",
     "Цукор": "sugarImages",
     "Вафля": "waffleImages",
@@ -118,22 +118,37 @@ const imagesContainerIdMapping = {
     "Печиво": "cookieImages",
 };
 
-function updateColors(word) {
-    console.log(`Спроба оновлення кольорів для слова: ${word}`); // Перевірка виклику функції
+const wordToHeaderColor = {
+    "Кокос": "#cba892",
+    "Кориця": "#d2cdba",
+    "Горіх": "#cea885",
+    "Цукор": "#d1b699",
+    "Вафля": "#bdc99b",
+    "Орео": "#c7bcc1",
+    "Нонпарель": "#d8b259",
+    "Печиво": "#c4aea9",
+};
 
+function updateColors(word) {
+    const headerColor = wordToHeaderColor[word];
     const colors = wordToColors[word];
-    if (colors) {
-        console.log(`Кольори знайдено: bg = ${colors.bg}, circle = ${colors.circle}`); // Перевірка знайдених кольорів
+
+    if (colors && headerColor) {
+        console.log(`Кольори знайдено: bg = ${colors.bg}, circle = ${colors.circle}, header = ${headerColor}`);
 
         const root = document.documentElement;
         root.style.setProperty('--current-bg', `var(${colors.bg})`);
         root.style.setProperty('--current-circle', `var(${colors.circle})`);
+        // Оновлення кольору хедера
+        document.querySelector('.header_wrap').style.background = `var(--gradient-start, ${headerColor})`;
 
-        console.log('Кольори оновлено'); // Підтвердження оновлення
+        console.log('Кольори оновлено');
     } else {
         console.error(`Кольори для слова "${word}" не знайдено.`);
     }
 }
+
+
 
 const wordToColors = {
     "Кокос": { bg: "--coconut-bg", circle: "--coconut-circle" },

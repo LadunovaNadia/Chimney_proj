@@ -1,11 +1,18 @@
-<header>
-	<div>
-		<nav>
-			<a href="/src/main.html" class="logo link">
+<header class="header_wrap">
+	<div class="header_container container">
+			<a href="/src/main.html" class="header_logo_link">
 				<svg width="80" height="80">
 					<use class="icon-logo" href="/src/images/symbol-defs.svg#icon-logo"></use>
 				</svg>
 			</a>
-		</nav>
+
+				<div class="header-burger-wrap">
+					<button type="button" class="header-burger-opener">
+						<svg width="24" height="24" class="header-burger-icon">
+							<use href="/src/images/symbol-defs.svg#icon-burger"></use>
+						</svg>
+					</button>
+				</div>
 	</div>
 </header>
+<load src="/src/partials/header/mobile_menu/mobile_menu.html" />
