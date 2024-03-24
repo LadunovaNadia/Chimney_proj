@@ -6,41 +6,186 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Pereval</title>
 	<link rel="stylesheet" href="./css/styles.css" />
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/TextPlugin.min.js"></script>
 </head>
 
 <body>
 	<include src="partials/header/header.html"></include>
 
-<main>
-<section class="main_section">
-	<div class="main_container container">
-		<div class="main_text_wrapper">
-			<h1 class="main_title">
-				Чімі з кокосовою присипкою
-			</h1>
-			<p class="main_subtitle">Власне виробництво, чімі виготовляютсякожен день свіжі
-				Димарний пиріг відомий по всьму світі тепер украінізований Чімі
-			</p>
-		</div>
-		<div class="main_circle_img_wrapper" id="main_circle_img_wrapper">
-		<div class="main_circle_text" id="circle-text"></div>
-		<div class="main_img_container">
-		<img id="mainImage" class="mainImage" src="./images/chimi_menu_main/chimi_coconut_1x-min.png" alt="Кокосовий Чімі">
-		</div>
-		</div>
-		
-	
-	</div>
+	<main>
+		<section class="main_section">
+			<div class="main_container container">
+				<div class="main_top_wrap">
+				<div class="main_text_wrapper">
+					<h1 class="main_title">Чімі з кокосовою присипкою</h1>
+					<p class="main_subtitle">Власне виробництво, чімі виготовляються кожен день свіжі. Димарний пиріг відомий по
+						всьому світі, тепер українізований.</p>
+				</div>
+							<!-- Buttons for navigation -->
+				<div class="main_button-block">
+					<ul class="slider_btns_list">
+							<li>
+								<button class="slider-btn main-slider-js" type="button" aria-label="Попереднє зображення">
+									<svg class="slider-icon slider-icon-prev">
+										<use href="./images/symbol-defs.svg#icon-arrow_left"></use>
+									</svg>
+								</button>
+							</li>
+							<li>
+								<button class="slider-btn main-slider-js" type="button" aria-label="Наступне зображення">
+									<svg class="slider-icon slider-icon-next">
+										<use href="./images/symbol-defs.svg#icon-arrow_right"></use>
+									</svg>
+								</button>
+							</li>
+					</ul>
+					</div>
+				</div>
+							<!-- Words for selecting -->
+				<div class="main_circle_img_wrapper" id="main_circle_img_wrapper">
+					<ul class="main_circle_text" id="circle-text">
+						<li class="word" data-word="Кокос">Кокос</li>
+						<li class="word" data-word="Кориця">Кориця</li>
+						<li class="word" data-word="Горіх">Горіх</li>
+						<li class="word" data-word="Цукор">Цукор</li>
+						<li class="word" data-word="Вафля">Вафля</li>
+						<li class="word" data-word="Орео">Орео</li>
+						<li class="word" data-word="Нонпарель">Нонпарель</li>
+						<li class="word" data-word="Печиво">Печиво</li>
+					</ul>
+
+				<div class="main_image_container">
+            <ul class="main_image_list">
+				<li class="main_image_item" >
+					<img class="mainImage main_img_hidden" data-word="Кокос" style="display: none;"
+					src="./images/chimi_menu_main/chimi_coconut_1x-min.png" alt="Основне зображення Чімі">
+				</li>
+            <li class="main_image_item">
+               <img class="mainImage main_img_hidden" data-word="Кориця" style="display: none;"
+               src="./images/chimi_menu_main/chimi_cinammon_1x-min.png" alt="Чімі з кориці">
+            </li>
+            <li class="main_image_item">
+            	<img class="mainImage main_img_hidden" data-word="Горіх" style="display: none;"
+               src="./images/chimi_menu_main/chimi_nut_1x-min.png" alt="Горіховий чімі">
+            </li>
+                        
+
+            <li class="main_image_item">
+               <img class="mainImage main_img_hidden" data-word="Цукор" style="display: none;"
+               src="./images/chimi_menu_main/chimi_sugar_1x-min.png" alt="Цукровий чімі">
+            </li>
+                        
+
+            <li class="main_image_item">
+               <img class="mainImage main_img_hidden" data-word="Вафля" style="display: none;"
+               src="./images/chimi_menu_main/chimi_waffle_1x-min.png" alt="Чімі з вафлі">
+            </li>
+                        
+
+            <li class="main_image_item">
+               <img class="mainImage main_img_hidden" data-word="Орео" style="display: none;"
+               src="./images/chimi_menu_main/chimi_oreo_1x-min.png" alt="Чімі з орео">
+            </li>
+                        
+
+            <li class="main_image_item">
+               <img class="mainImage main_img_hidden" data-word="Нонпарель" style="display: none;"
+               src="./images/chimi_menu_main/chimi_non_parel-min.png" alt="Чімі з нонпареллю">
+            </li>
+                        
+            <li class="main_image_item">
+               <img class="mainImage main_img_hidden" data-word="Печиво" style="display: none;"
+               src="./images/chimi_menu_main/chimi_cookies_1x-min.png" alt="Чімі печиво">
+            </li>                        
+         </ul>
+			</div>
+			</div>
+			</div>
+		</section>
+<div id="additionalImages" class="main_images_container">
+	<section id="coconutImages" class="additional-images hidden">
+		<h2 class="visually-hidden">Кокос зображення</h2>
+		<ul>
+			<li class="main_coconut_1"><img src="./images/main/coconut_1_1x-min.png" alt="Кокосовий Чімі 1"></li>
+			<li class="main_coconut_2"><img src="./images/main/coconut_2_1x-min.png" alt="Кокосовий Чімі 2"></li>
+			<li class="main_coconut_3"><img src="./images/main/coconut_milk_1x-min.png" alt="Кокосове молоко"></li>
+		</ul>
+	</section>
+
+	<section id="cinnamoneImages" class="additional-images hidden">
+		<h2 class="visually-hidden">Кориця зображення</h2>
+		<ul>
+			<li class="main_cinnamone_1"><img src="./images/main/cinnamone_1_1x-min.png" alt="Кориця Чімі 1"></li>
+			<li class="main_cinnamone_2"><img src="./images/main/cinnamone_2_1x-min.png" alt="Кориця Чімі 2"></li>
+			<li class="main_cinnamone_3"><img src="./images/main/cinnamone_3_1x-min.png" alt="Кориця Чімі 3"></li>
+			<li class="main_cinnamone_4"><img src="./images/main/cinnamone_4_1x-min.png" alt="Кориця Чімі 4"></li>
+			<li class="main_cinnamone_5"><img src="./images/main/cinnamone_leaves_1x-min.png" alt="Листя кориці"></li>
+		</ul>
+	</section>
+
+	<section id="nutImages" class="additional-images hidden">
+		<h2 class="visually-hidden">Горіх зображення</h2>
+		<ul>
+			<li class="main_nut_1"><img src="./images/main/nut_1_1x-min.png" alt="Горіховий Чімі 1"></li>
+			<li class="main_nut_2"><img src="./images/main/nut_2_1x-min.png" alt="Горіховий Чімі 2"></li>
+			<li class="main_nut_3"><img src="./images/main/nut_3_1x-min.png" alt="Горіховий Чімі 3"></li>
+			<li class="main_nut_4"><img src="./images/main/nut_4_1x-min.png" alt="Горіховий Чімі 4"></li>
+		</ul>
+	</section>
+
+	<section id="sugarImages" class="additional-images hidden">
+		<h2 class="visually-hidden">Цукор зображення</h2>
+		<ul>
+			<li class="main_sugar_1"><img src="./images/main/sugar_1_1x-min.png" alt="Цукровий Чімі 1"></li>
+			<li class="main_sugar_2"><img src="./images/main/sugar_2_1x-min.png" alt="Цукровий Чімі 2"></li>
+			<li class="main_sugar_3"><img src="./images/main/sugar_3_1x-min.png" alt="Цукровий Чімі 3"></li>
+			<li class="main_sugar_4"><img src="./images/main/sugar_4_1x-min.png" alt="Цукровий Чімі 4"></li>
+		</ul>
+	</section>
+
+<section id="waffleImages" class="additional-images hidden">
+	<h2 class="visually-hidden">Вафля зображення</h2>
+	<ul>
+		<li class="main_waffle_1"><img src="./images/main/waffles_1_1x-min.png" alt="Вафельний Чімі 1"></li>
+		<li class="main_waffle_2"><img src="./images/main/waffles_2_1x-min.png" alt="Вафельний Чімі 2"></li>
+		<li class="main_waffle_3"><img src="./images/main/waffles_3_1x-min.png" alt="Вафельний Чімі 3"></li>
+	</ul>
 </section>
+
+<section id="oreoImages" class="additional-images hidden">
+	<h2 class="visually-hidden">Орео зображення</h2>
+	<ul>
+		<li class="main_oreo_1"><img src="./images/main/oreo_1_1x-min.png" alt="Орео Чімі 1"></li>
+		<li class="main_oreo_2"><img src="./images/main/oreo_2_1x-min.png" alt="Орео Чімі 2"></li>
+		<li class="main_oreo_3"><img src="./images/main/oreo_3_1x-min.png" alt="Орео Чімі 3"></li>
+	</ul>
+</section>
+
+<section id="nonparelImages" class="additional-images hidden">
+	<h2 class="visually-hidden">Нонпарель зображення</h2>
+	<ul>
+		<li class="main_nonparel_1"><img src="./images/main/nonparel_1_1x-min.png" alt="Нонпарель Чімі 1"></li>
+		<li class="main_nonparel_2"><img src="./images/main/nonparel_2_1x-min.png" alt="Нонпарель Чімі 2"></li>
+		<li class="main_nonparel_3"><img src="./images/main/nonparel_3_1x-min.png" alt="Нонпарель Чімі 3"></li>
+		<li class="main_nonparel_4"><img src="./images/main/nonparel_4_1x-min.png" alt="Нонпарель Чімі 4"></li>
+		<li class="main_nonparel_5"><img src="./images/main/nonparel_5_1x-min.png" alt="Нонпарель Чімі 5"></li>
+	</ul>
+</section>
+
+<section id="cookieImages" class="additional-images hidden">
+	<h2 class="visually-hidden">Печиво зображення</h2>
+	<ul>
+		<li class="main_cookie_1"><img src="./images/main/cookies_1_1x-min.png" alt="Печиво Чімі 1"></li>
+		<li class="main_cookie_2"><img src="./images/main/cookies_2_1x-min.png" alt="Печиво Чімі 2"></li>
+		<li class="main_cookie_3"><img src="./images/main/cookies_3_1x-min.png" alt="Печиво Чімі 3"></li>
+	</ul>
+</section>
+
+</div>
+
+
 	</main>
 
-		<script type="module" src="./main.js"></script>
-
+	<script type="module" src="./main.js"></script>
 </body>
 
 </html>
-
-
-
