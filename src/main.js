@@ -40,6 +40,7 @@ function updateInterfaceForWord(word, words) {
     updateColors(word);
 }
 
+
 function updateActiveWord(word, words) {
     words.forEach(wordElement => {
         if (wordElement.dataset.word === word) {
