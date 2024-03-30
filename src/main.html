@@ -203,26 +203,8 @@
 					<p class="main_subtitle">Власне виробництво, чімі виготовляються кожен день свіжі. Димарний пиріг відомий по
 						всьому світі, тепер українізований.</p>
 				</div>
-							<!-- Buttons for navigation -->
-				<div class="main_button-block">
-					<ul class="slider_btns_list">
-							<li>
-								<button class="slider-btn main-slider-js" type="button" aria-label="Попереднє зображення">
-									<svg class="slider-icon slider-icon-prev">
-										<use href="./images/symbol-defs.svg#icon-arrow_left"></use>
-									</svg>
-								</button>
-							</li>
-							<li>
-								<button class="slider-btn main-slider-js" type="button" aria-label="Наступне зображення">
-									<svg class="slider-icon slider-icon-next">
-										<use href="./images/symbol-defs.svg#icon-arrow_right"></use>
-									</svg>
-								</button>
-							</li>
-					</ul>
-					</div>
 				</div>
+
 							<!-- Words for selecting -->
 				<div class="main_circle_img_wrapper" id="main_circle_img_wrapper">
 					<ul class="main_circle_text" id="circle-text">
@@ -238,10 +220,15 @@
 
 				<div class="main_image_container">
             <ul class="main_image_list">
-				<li class="main_image_item" >
-					<img class="mainImage main_img_hidden" data-word="Кокос" style="display: none;"
-					src="./images/chimi_menu_main/chimi_coconut_1x-min.png" alt="Основне зображення Чімі">
+				<li class="main_image_item">
+					<picture>
+						<source srcset="./images/chimi_menu_main/chimi_coconut_2x-min.png" media="(min-width: 1280px)" />
+						<source srcset="./images/chimi_menu_main/chimi_coconut_1x-min.png" media="(min-width: 744px)" />
+						<img class="mainImage main_img_hidden" data-word="Кокос" src="./images/chimi_menu_main/chimi_coconut_1x-min.png"
+							alt="Основне зображення Чімі" loading="lazy">
+					</picture>
 				</li>
+
             <li class="main_image_item">
                <img class="mainImage main_img_hidden" data-word="Кориця" style="display: none;"
                src="./images/chimi_menu_main/chimi_cinammon_1x-min.png" alt="Чімі з кориці">
@@ -279,7 +266,26 @@
             </li>                        
          </ul>
 			</div>
+						<div class="main_button-block">
+							<ul class="slider_btns_list">
+								<li>
+									<button class="slider-btn main-slider-js" type="button" aria-label="Попереднє зображення">
+										<svg class="slider-icon slider-icon-prev">
+											<use href="./images/symbol-defs.svg#icon-arrow_left"></use>
+										</svg>
+									</button>
+								</li>
+								<li>
+									<button class="slider-btn main-slider-js" type="button" aria-label="Наступне зображення">
+										<svg class="slider-icon slider-icon-next">
+											<use href="./images/symbol-defs.svg#icon-arrow_right"></use>
+										</svg>
+									</button>
+								</li>
+							</ul>
+						</div>
 			</div>
+
 			</div>
 
 		</section>

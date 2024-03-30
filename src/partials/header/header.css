@@ -108,13 +108,14 @@
 		.header-nav {
 			display: flex;
 			gap: 30px;
-
-			font-family: var(--font-family);
-			font-weight: var(--normal);
-			font-size: var(--body-2);
-			color: var(--black-100);
 		}
 
+		.header-nav-link {
+			font-family: var(--font-family);
+				font-weight: var(--normal);
+				font-size: var(--body-2);
+				color: var(--black-100);
+		}
 	.language-switcher-btn {
 		font-family: var(--font-family);
 		font-weight: var(--normal);
@@ -122,5 +123,26 @@
 		text-transform: uppercase;
 		color: var(--black-100);
 	}
+
+
 }
 
+
+@media only screen and (min-width: 1280px) {
+	.header-container {
+			max-width: none;
+			margin: 0;
+			padding: 12px 80px;
+		}
+
+   .header-nav {
+		display: flex;
+			gap: 81px;
+		}
+
+.header_nav_cont_wrap {
+		gap: 81px;
+}
+
+
+}
