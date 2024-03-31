@@ -1,18 +1,60 @@
 <header class="header_wrap">
-	<div class="header_container container">
+	<div class="header_container">
 			<a href="/src/main.html" class="header_logo_link">
 				<svg width="80" height="80">
 					<use class="icon-logo" href="/src/images/symbol-defs.svg#icon-logo"></use>
 				</svg>
 			</a>
+		<div class="header_nav_cont_wrap">
+			<nav class="header-nav">
+				<a href="#main" class="header-nav-link" data-i18n="header.aboutMe">Головна</a>
+				<a href="#menu" class="header-nav-link" data-i18n="header.youWillFind">Меню</a>
+				<a href="#address" class="header-nav-link" data-i18n="header.address">Адреса</a>
+			</nav>
+			
+			<div class="header-contacts">
+				<a href="https://www.instagram.com/pereval_ua/?igsh=MTE4OHRuend3ODlsdw%3D%3D" target="_blank" rel="noopener"
+					class="header-insta-link link">
+					<svg width="27" height="26">
+						<use href="/src/images/symbol-defs.svg#icon-instagram"></use>
+					</svg>
+				</a>
+				<a href="https://www.tiktok.com/@pereval_ua?_t=8l6jbuL2581&_r=1" target="_blank" rel="noopener"
+					class="header-tik_tok-link link">
+					<svg width="27" height="26" class="">
+						<use href="/src/images/symbol-defs.svg#icon-tik_tok"></use>
+					</svg>
+				</a>
+				<a href="#" target="_blank" rel="noopener" class="header-telegram-link link">
+					<svg width="27" height="26" class="">
+						<use href="/src/images/symbol-defs.svg#icon-telegram"></use>
+					</svg>
+				</a>
+				<a href="https://www.facebook.com/people/%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%B0%D0%BB/61554970162275/" target="_blank"
+					rel="noopener" class="header-fb-link link">
+					<svg width="27" height="26" class="">
+						<use href="/src/images/symbol-defs.svg#icon-facebook"></use>
+					</svg>
+				</a>
+			</div>
+			
+			<div class="header-switch-wrap">
+				<button class="language-switcher-btn" type="button">
+					EN
+					<svg width="18" height="10" class="language-switcher-icon">
+						<use href="/src/images/symbol-defs.svg#icon-arrow_down"></use>
+					</svg>
+				</button>
+			</div>
+			<div>
+				<button type="button" class="header-burger-opener">
+					<svg width="24" height="24" class="header-burger-icon">
+						<use href="/src/images/symbol-defs.svg#icon-burger"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
 
-				<div class="header-burger-wrap">
-					<button type="button" class="header-burger-opener">
-						<svg width="24" height="24" class="header-burger-icon">
-							<use href="/src/images/symbol-defs.svg#icon-burger"></use>
-						</svg>
-					</button>
-				</div>
 	</div>
 </header>
 <load src="/src/partials/header/mobile_menu/mobile_menu.html" />
