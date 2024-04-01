@@ -234,7 +234,7 @@
 	}
 
 	.menu_container {
-		gap: 72px;
+		gap: 100px;
 	}
 
 
@@ -331,14 +331,14 @@
 		left: 50%;
 		}
 		
-				.img_description {
-					flex-direction: column;
-					gap: 18px;
-					display: flex;
-					position: absolute;
-					top: 284px;
-					width: 100%;
-					text-align: center;
+		.img_description {
+		flex-direction: column;
+		gap: 18px;
+		display: flex;
+		position: absolute;
+		top: 284px;
+		width: 100%;
+		text-align: center;
 				}
 		
 				.select_img_text_wrap {
