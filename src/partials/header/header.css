@@ -1,8 +1,6 @@
 @import url('/src/partials/header/mobile_menu/mobile_menu.css');
 
 .header_wrap {
-	background: var(--header-bg-color);
-
 	background-size: cover;
 	border-bottom: 1px solid rgba(0, 0, 0, 1);
 	/* height: 82px; */

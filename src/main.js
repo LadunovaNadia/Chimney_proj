@@ -1,3 +1,6 @@
+
+
+
 let activeWordIndex = 0;
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -5,7 +8,32 @@ document.addEventListener('DOMContentLoaded', () => {
     setupClickableWords(words);
     setupNavigationButtons(words);
     updateInterfaceForWord(words[0].dataset.word, words);
+
+    document.querySelector('.header-nav-link[href="#main-page"]').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('main-page').style.display = 'block';
+        updateHeaderColorForWord(words[activeWordIndex].dataset.word);
+    });
+
+    document.querySelector('.header-nav-link[href="#menu"]').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('main-page').style.display = 'none';
+        document.querySelector('.header_wrap').style.background = 'var(--background, #eee5df)';
+    });
 });
+
+function updateHeaderColorForWord(word) {
+    const headerColor = wordToHeaderColor[word];
+    if (headerColor) {
+        console.log(`Кольори знайдено: header = ${headerColor}`);
+        document.querySelector('.header_wrap').style.background = `var(--gradient-start, ${headerColor})`;
+    } else {
+        console.error(`Кольори для слова "${word}" не знайдено.`);
+    }
+}
+
+
+
 
 function setupClickableWords(words) {
     words.forEach((wordElement, index) => {
