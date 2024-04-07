@@ -1,0 +1,41 @@
+.cream_inside_section {
+	padding: 64px 0;
+}
+
+.cream_inside_container {
+	display: flex;
+	flex-direction: column;
+	gap: 64px;
+}
+
+.container {}
+
+.cream_inside_title {
+	position: relative;
+}
+
+.cream_inside_svg {
+	position: absolute;
+	width: 273px;
+	height: 26px;
+	fill: var(--main-roze);
+}
+
+.cream_inside_list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+   justify-content: center;
+   column-gap: 17px;
+   row-gap: 40px;
+}
+
+.cream_inside_item {
+width: calc((100% - (2 * 17px)) / 2);
+display: flex;
+flex-direction: column;
+}
+
+.cream_list_title {}
+
+.cream_list_text {}

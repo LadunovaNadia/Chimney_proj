@@ -1,8 +1,12 @@
-// document.addEventListener('DOMContentLoaded', () => {
-// document.querySelector('.header-nav-link[href="#menu"]').addEventListener('click', function(event) {
-//     event.preventDefault();
-//     // Оновлення кольору хедера для меню
-//     document.querySelector('.header_wrap').style.background = 'var(--background, #eee5df)';
-// });
-
-// });
+document.addEventListener("DOMContentLoaded", function() {
+    const selectItems = document.querySelectorAll('.select_item');
+    selectItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-target');
+            const targetBlock = document.getElementById(targetId);
+            if (targetBlock) {
+                targetBlock.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+});
