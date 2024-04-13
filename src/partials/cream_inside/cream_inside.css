@@ -1,5 +1,20 @@
 .cream_inside_section {
 	padding: 64px 0;
+
+	position: relative;
+}
+
+.cream_inside_section::after {
+	content: "";
+	background-image: url("/src/images/menu/curve_botton_line-min.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 347px;
+	height: 18px;
+
 }
 
 .cream_inside_container {
@@ -8,10 +23,19 @@
 	gap: 64px;
 }
 
-.container {}
+.cream_title_svg_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
 .cream_inside_title {
 	position: relative;
+
+	font-family: var(--font-family);
+	font-weight: var(--normal);
+	font-size: var(--subtitle-1);
+	color: var(--black-00);
 }
 
 .cream_inside_svg {
@@ -19,6 +43,7 @@
 	width: 273px;
 	height: 26px;
 	fill: var(--main-roze);
+	z-index: -1;
 }
 
 .cream_inside_list {
@@ -34,8 +59,93 @@
 width: calc((100% - (2 * 17px)) / 2);
 display: flex;
 flex-direction: column;
+align-items: center;
+gap: 30px;
+
+width: 163px;
+height: 268px;
 }
 
-.cream_list_title {}
+.cream_inside_item img {
+width: 159px;
+height: 157px;
+}
 
-.cream_list_text {}
+.cream_text_container {
+display: flex;
+flex-direction: column;
+gap: 7.5px;
+}
+
+.cream_list_title {
+font-family: var(--font-family);
+font-weight: var(--normal);
+font-size: var(--body-2);
+text-align: center;
+color: var(--black-100);
+}
+
+.cream_list_text {
+	font-family: var(--font-family);
+		font-weight: var(--normal);
+		font-size: 10px;
+		text-align: center;
+		color: var(--main-orange);
+}
+
+@media only screen and (min-width: 744px) {
+.cream_inside_section {
+	padding-top: 80px;
+}
+
+.cream_inside_section::after {
+	width: 669px;
+}
+
+.cream_inside_container {
+	gap: 69px;
+}
+
+.cream_inside_svg {
+	width: 609px;
+	height: 47px;
+}
+
+.cream_inside_title {
+	font-size: var(--large-3);
+}
+
+.cream_inside_list {
+	column-gap: 24px;
+}
+
+.cream_inside_item {
+		width: calc((100% - 2 * 24px) / 3);
+}
+
+.cream_inside_list li:nth-child(7),
+.cream_inside_list li:nth-child(8),
+.cream_inside_list li:nth-child(9),
+.cream_inside_list li:nth-child(10) {
+	/* Два елементи в ряд */
+	width: calc((100% - 24px) / 2);
+}
+
+.cream_inside_item img {
+	width: 157px;
+	height: 153px;
+}
+
+.cream_text_container {
+gap: 16.5px;
+}
+
+.cream_list_title {
+	font-size: 16px;
+
+}
+
+.cream_list_text {
+	font-size: var(--subtitle);
+}
+}
