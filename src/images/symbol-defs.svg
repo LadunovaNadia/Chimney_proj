@@ -170,5 +170,8 @@
 <symbol id="icon-bg_menu_second" viewBox="0 0 188 32">
 <path fill="#aeaeae" style="fill: var(--color2, #aeaeae)" d="M0.727 23.578l8.948-23.578h164.369l12.865 23.578-5.965 8.422h-180.217v-8.422z"></path>
 </symbol>
+<symbol id="icon-roze_decor_svg" viewBox="0 0 336 32">
+<path fill="#e4a4a4" style="fill: var(--color3, #e4a4a4)" d="M0 23.578l16.148-23.578h296.634l23.218 23.578-10.766 8.422h-325.234v-8.422z"></path>
+</symbol>
 </defs>
 </svg>
